@@ -1,37 +1,26 @@
+/* 
+Exercițiul 4: Verificarea eligibilității pentru un împrumut 
+Implementează un program care citește salariul anual și scorul de credit de la tastatură. 
+Pentru a fi eligibil pentru un împrumut, salariul trebuie să fie de cel puțin 20,000 MDL/lună, iar scorul de credit de cel puțin 600.
+*/
 #include <stdio.h>
 
 int main()
 {
-    int note;
-    while (1)
-    {
-        printf("\n");
-        printf("Introdu nota: ");
-        scanf("%d", &note);
-        switch (note)
-        {
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-            printf("Insuficient!");
-            break;
-        case 5:
-        case 6:
-            printf("Suficient!");
-            break;
-        case 7:
-        case 8:
-            printf("bine!");
-            break;
-        case 9:
-        case 10:
-            printf("Foarte bine!");
-            break;
-        default:
-            printf("Nota introdusa este incoprecta!");
-            break;
-            return 0;
-        }
+    int salary;
+    int score;
+    printf("Indica salariu in lei: ");
+    scanf("%d", &salary);
+    printf("Indica scorul de credit: ");
+    scanf("%d", &score);
+
+    if (salary >= 20000 && score >= 600) {
+        printf("Felicitari esti eligibil pentru imprumut!");
     }
+    else
+    {
+        printf("Cu parere de rau nu esti eligibil pentru imprumut!");
+    }
+
+    return 0;
 }

@@ -1,3 +1,11 @@
+/* 
+Exercițiul 1: Calculul impozitului pe venit 
+Scrie un program care citește salariul anual al unui salariat de la tastatură (în MDL) și calculează impozitul conform următoarelor reguli:
+Pentru salarii până la 200,000 MDL, impozitul este 0%.
+Pentru salarii între 200,001 și 350,000 MDL, impozitul este 10%.
+Pentru salarii peste 350,000 MDL, impozitul este 15%.
+*/
+
 #include <stdio.h>
 
 int main()

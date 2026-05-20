@@ -1,3 +1,11 @@
+/* 
+Exercițiul 2: Calculul tarifelor pentru parcarea cu plată 
+Implementează un program care calculează costul total al parcării conform următoarelor tarife:
+Primele 2 ore: 50 MDL/oră.
+Următoarele 3 ore: 25 MDL/oră.
+Orice oră după primele 5 ore: 15 MDL/oră.
+
+*/
 #include <stdio.h>
 
 int main()

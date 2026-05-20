@@ -1,3 +1,8 @@
+/* 
+Exercițiul 3: Calculul costului unei comenzi 
+Scrie un program care citește numărul de pizza comandate și prețul per pizza de la tastatură. 
+Dacă comanda depășește 750 MDL, se aplică o reducere de 15%. Afișează costul total.
+*/
 #include <stdio.h>
 
 int main()
