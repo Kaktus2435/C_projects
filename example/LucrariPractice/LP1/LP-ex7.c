@@ -1,5 +1,5 @@
 /*
-Exercițiul 7: Conversia timpului
+Conversia timpului
 Creează un program care citește un număr de secunde de la tastatură și le convertește în ore, minute și secunde.
 */
 
@@ -11,6 +11,7 @@ int main()
     int enteredValue;
     int seconds;
     int minutes;
+    printf("Scrie numarul de secunde:\n");
     scanf("%d", &enteredValue);
     int hours = enteredValue / 3600;
     printf("\n");

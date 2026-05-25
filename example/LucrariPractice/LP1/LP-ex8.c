@@ -9,6 +9,7 @@ Un an este bisect dacă este divizibil cu 4, dar nu cu 100, sau este divizibil c
 int main()
 {
     int year;
+    printf("Scrie anul pentru a vedea daca este bisect:\n");
     scanf("%d", &year);
 
     if ((year % 4) == 0 && (year % 100) != 0 || (year % 400) == 0)
