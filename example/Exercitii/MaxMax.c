@@ -6,7 +6,7 @@ int main()
     int a[] = {3, 5, 8, 6, 2, 7, 10, 11};
 
     int max1 = a[0];
-    int max2;
+    int max2 = a[1];
     for(int i = 1; i < 8; i++){
         if(max1 < a[i])
         {
