@@ -1,10 +1,10 @@
-/*
- Identifică cele mai mici trei numere impare ale unui vector
-Input (intrare)                  Output (rezultat)
-v1[]={3,5,1,8,9,2,7,10,11,0}        minodd1=1
-                                    minodd2=3
-                                    minodd3=5
-*/
+// /*
+//  Identifică cele mai mici trei numere impare ale unui vector
+// Input (intrare)                  Output (rezultat)
+// v1[]={3,5,1,8,9,2,7,10,11,0}        minodd1=1
+//                                     minodd2=3
+//                                     minodd3=5
+// */
 #include <stdio.h>
 
 int main()
@@ -14,7 +14,7 @@ int main()
     int l = sizeof(v1) / sizeof(v1[0]);
     int v2[l];
     for (int  i = 0; i < l; i++) {
-        if(v1[i] % 2 != 0){
+        if(v1[i] & 1){
             v2[k] = v1[i]; 
             printf("%d\n", v2[k]);
             k++;
@@ -43,3 +43,35 @@ int main()
     
     return 0;
 }
+
+// int main()
+// {
+//     int v1[]={3,5,1,8,9,2,7,10,11,0};
+//     int l = sizeof(v1) / sizeof (v1[0]);
+//     int min1 = v1[0];
+//     int min2 = v1[0];
+//     int min3 = v1[0];
+
+//     for(int i = 0; i < l; i++) {
+//         if(v1[i] < min1 && v1[i] % 2 != 0) {
+//             min1 = v1[i];
+//         }
+//     }
+//     min2 = 999;
+//     for(int i = 0; i < l; i++){
+//         if(v1[i] < min2 && v1[i] > min1 && v1[i] % 2 != 0) {
+//             min2 = v1[i];
+//         }
+//     }
+//     min3 = 999;
+//     for(int i = 0; i < l; i++){
+//         if(v1[i] < min3 && v1[i] >   min2 &&  v1[i] % 2 != 0) {
+//             min3 = v1[i];
+//         }
+//     }
+//     printf("Min1 = %d\n", min1);
+//     printf("Min2 = %d\n", min2);
+//     printf("Min3 = %d\n", min3);
+
+//     return 0;
+// }
